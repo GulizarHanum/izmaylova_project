@@ -6,18 +6,22 @@ const useStyles = makeStyles((theme) =>
             display: 'flex',
             flexGrow: 1,
         },
-        headerButtons: {
-            alignContent: 'center',
-            flexGrow: 1,
-
+        spacer: {
+            flex: 1
         },
-        searchButtons: {
+        headerButtons: {
             display: 'flex',
-            justifyContent: 'center',
-            width: '1100px',
+            flexWrap: 'nowrap'
         },
         buttons: {
-            marginRight: '10px !important'
+            display: 'flex',
+            flexWrap: 'nowrap',
+            margin: '5px 7px 5px 7px !important'
+        },
+        button: {
+            width: '250px',
+            height: '60px',
+            marginBottom: '20px !important'
         },
         icon: {
             fontSize: '22px !important'
@@ -51,16 +55,19 @@ const useStyles = makeStyles((theme) =>
         paper: {
             padding: theme.spacing(2),
         },
+        text: {
+            fontSize: '1.3em'
+        },
         header: {
             display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'nowrap',
             flexFlow: 'row nowrap',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexDirection: 'row'
         },
         logo: {
-            marginRight: '30px',
-            paddingRight: '1200px'
+            display: 'flex',
+            flexWrap: 'nowrap',
+            cursor: 'pointer'
         },
         cardTitle: {
             margin: 0,
@@ -116,6 +123,10 @@ const useStyles = makeStyles((theme) =>
             height: '250px',
             objectFit: 'cover',
         },
+        image: {
+            width: '100%',
+            objectFit: 'cover',
+        },
         card: {
             background: '#ffffff',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
@@ -125,8 +136,55 @@ const useStyles = makeStyles((theme) =>
             flexBasis: '31%',
             textDecoration: 'none',
             maxWidth: '500px'
+        },
+        container: {
+            margin: 'auto',
+        },
+        footer: {
+            padding: '60px 0',
+            backgroundColor: '#3b3838',
+            display: 'flex',
+            flexFlow: 'row nowrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexDirection: 'row'
+        },
+        footerBlock: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+        },
+        socialLinks: {
+            display: 'flex',
+            alignItems: 'center',
+            margin: '10px'
+        },
+        margin: {
+            margin: '3px !important',
+        },
+        textFiled: {
+            width: '500px',
+            marginRight: '10px !important',
+        },
+        city: {
+            width: '400px',
+            margin: '10px 0 !important',
+        },
+        searchByCity: {
+            width: '170px',
+        },
+        addButton: {
+            width: '250px',
+            height: '60px',
+            marginTop: '30px !important'
+        },
+        viewsCount: {
+            display: 'flex',
+            alignItems: 'center',
+            marginTop: '.3em',
+            fontSize: '1.3em',
         }
-}),
+    }),
 );
 
 export default useStyles;
